@@ -1,17 +1,17 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 app = Flask(__name__)
 
 posts = [
     {
         'author': 'Benny Chan',
         'title': 'Blog Post 1',
-        'Content': 'First post content',
+        'content': 'First post content',
         'date_posted': 'April 20, 2018'
     },
     {
         'author': 'Jane Doe',
         'title': 'Blog Post 2',
-        'Content': 'Second post content',
+        'content': 'Second post content',
         'date_posted': 'April 20, 2018'
     }
 ]
